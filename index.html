@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bianca Pillon">
+    <title>Desafio Aula 13 - Bianca Pillon</title>
+    <link rel="Stylesheet" href="Style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="imagem/favicon_azul.png" type="image/x-icon"
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="imagem/logo_branco.png" alt="" class="header_logo">
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03</a></li>
+                <li><a href="#">Menu 04</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fundo_main">
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="logos_footer">
+            <div>
+                <a href="#">
+                    <img src="imagem/facebook.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="imagem/github.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="imagem/insta.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="imagem/linkedin.png" alt="" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="imagem/wpp.png" alt="" class="tamanho">
+                </a>
+            </div>
+        </div>
+        <p class="texto_footer">
+            Elas na tech 2023 &#127892; Bianca Pillon | Turma 10</p>
+    </footer>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+</body>
+
+</html>
